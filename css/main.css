@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  *::after {
+    box-sizing: border-box; }
+  *::before {
+    box-sizing: border-box; }
+
+* {
+  font-family: 'Fredoka', sans-serif; }
+
+.Background {
+  background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  min-height: 100vh;
+  min-width: 100vw; }
+
+.navegador {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.navegador__items {
+  justify-content: center; }
+
+.navegador__items--link {
+  display: flex;
+  justify-content: center; }
+
+.hidden {
+  display: none !important; }
+
+.img-circle {
+  border-radius: 50%; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.img {
+  width: 100px;
+  height: auto; }

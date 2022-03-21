@@ -1,0 +1,37 @@
+@import "variables";
+@import "reset";
+@import "typography";
+
+.Background{
+    background: $BackgroundColor;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.navegador{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.navegador__items{
+    justify-content: center;
+}
+.navegador__items--link{
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.img{
+    width: 100px;
+    height: auto;
+}
