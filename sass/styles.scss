@@ -1,13 +1,17 @@
 @import "variables";
 @import "reset";
 @import "typography";
+@import "mixins";
 
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
 .Background{
     background: $BackgroundColor;
     min-height: 100vh;
     min-width: 100vw;
 }
-
 .navegador{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -15,11 +19,33 @@
 .navegador__items{
     justify-content: center;
 }
-.navegador__items--link{
+.navegador__items__item{
     display: flex;
     justify-content: center;
 }
-
+.navegador__items__item--link{
+    font-size: 20px;
+}
+.navegador__items__item--logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.proyectos{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.proyectos__cards{
+    justify-content: center;
+}
+.proyectos__cards--card{
+    @include BordesRedondeados;
+    @include BordesSombreados;
+    width: 250px;
+    height: 150px;
+    background: whitesmoke;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .hidden {
     display: none !important;
 }
@@ -34,4 +60,16 @@
 .img{
     width: 100px;
     height: auto;
+}
+.bg-dark{
+    background-color: #212529;
+    @media (min-width: 992px){
+        background-color: transparent!important;
+    }
+}
+.nav-link{
+    color: whitesmoke!important;
+    &:hover{
+        color: #2b92c5!important;;
+    }
 }
