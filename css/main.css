@@ -14,6 +14,14 @@ a {
   text-decoration: none;
   color: whitesmoke; }
 
+.bordesRedondeados {
+  border-radius: 1.25rem; }
+
+.zoomXs {
+  transition: transform .4s; }
+  .zoomXs:hover {
+    transform: scale(1.2); }
+
 .Background {
   background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   min-height: 100vh;
@@ -65,8 +73,11 @@ a {
   height: auto; }
 
 .img {
-  width: 100px;
+  width: 75px;
   height: auto; }
+  @media (min-width: 768px) {
+    .img {
+      width: 100px; } }
 
 .bg-dark {
   background-color: #212529; }

@@ -7,6 +7,15 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
+.bordesRedondeados{
+    @include BordesRedondeados;
+}
+.zoomXs {
+    transition: transform .4s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
 .Background{
     background: $BackgroundColor;
     min-height: 100vh;
@@ -58,8 +67,11 @@ a{
     height: auto;
 }
 .img{
-    width: 100px;
+    width: 75px;
     height: auto;
+    @media (min-width: 768px){
+        width: 100px;
+    }
 }
 .bg-dark{
     background-color: #212529;
