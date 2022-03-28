@@ -7,6 +7,29 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
+.btn-ppal{
+    color: whitesmoke;
+    background-color: #2C97C8;
+    border-color: #2C97C8;
+    border-radius: 0.5rem;
+    font-weight: Bold;
+    &:hover{
+        color: whitesmoke;
+        background-color: #32d3ab;
+        border-color: #32d3ab;
+    }
+}
+.btn-sec{
+    color: whitesmoke;
+    background-color: #525659;
+    border-color: #525659;
+    border-radius: 0.5rem;
+    &:hover{
+        color: whitesmoke;
+        background-color: #303030;
+        border-color: #303030;
+    }
+}
 .bordesRedondeados{
     @include BordesRedondeados;
 }
@@ -71,6 +94,20 @@ a{
     height: auto;
     @media (min-width: 768px){
         width: 100px;
+    }
+}
+.sizeXl{
+    width: 200px;
+    height: auto;
+    @media (min-width: 768px){
+        width: 300px;
+    }
+}
+.sizeXl-container{
+    width: 250px;
+    height: auto;
+    @media (min-width: 768px){
+        width: 350px;
     }
 }
 .bg-dark{
