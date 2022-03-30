@@ -17,15 +17,21 @@
     <title>Portfolio Ivan Correa</title>
 </head>
 <body>
+    <!--    
+            *Cambiar nav con fondo blur al scrollear
+            *Buscar colores con más contraste
+            *Cards color negro
+            *Agregar footer 
+    -->
     <div class="Background d-flex flex-column justify-content-center align-items-center">
         <!-- Navegador -->
-        <nav class="navbar navbar-dark navbar-expand-lg bg-transparent fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-blur fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand ps-lg-5 fs-2" aria-current="page" href="#landing">Ivan Correa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end bg-dark bg-lg-transparent" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end bg-dark-blur" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -48,12 +54,12 @@
         </nav>
         <!-- Landing -->
         <header class="container mt-5" id="landing">
-            <div class="row row-cols-6 row-cols-md-6 row-cols-lg-12 g-4 p-5 align-items-center text-white justify-content-center">
+            <div class="row row-cols-6 row-cols-md-6 row-cols-lg-12 g-4 p-3 p-sm-5 align-items-center text-white justify-content-center mt-5">
                 <div class="col-12 col-md-6 col-lg-5">
                     <img src="img/prog.svg" alt="" class="sizeXl">
                 </div>
                 <div class="col-12 col-md-6 col-lg-7">
-                    <h1 id="app">Ivan Correa <br></h1>
+                    <h1 id="app" class="title-h1">Ivan Correa <br></h1>
                 </div>
             </div>
         </header>
@@ -96,10 +102,10 @@
         </main>
         <!-- Proyectos -->
         <h2 class="text-white fs-1 fw-bold mb-5 mt-5" id="projects">Projects</h2>
-        <section class="container bg-light bg-opacity-50 bordesRedondeados mb-5 w-75">
+        <section class="container bg-info bg-opacity-50 bordesRedondeados mb-5 w-75">
             <div class="row row-cols-1 row-cols-xxl-3 g-4 p-5 text-center">
                 <div class="col">
-                    <div class="card h-100 bordesRedondeados">
+                    <div class="card h-100 bordesRedondeados bg-cards">
                         <img src="img/pokemonOrigins.png" class="card-img-top bordesRedondeados" alt="Pokemon Project foto">
                         <div class="card-body">
                             <h5 class="card-title">Pokemon: Origins</h5>
@@ -110,24 +116,24 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 bordesRedondeados">
+                    <div class="card h-100 bordesRedondeados bg-cards">
                         <img src="img/portfolio.png" class="card-img-top bordesRedondeados" alt="Portfolio foto">
                         <div class="card-body">
                             <h5 class="card-title">Portfolio</h5>
                             <p class="card-text">My personal Portfolio.</p>
                             <a href="#" class="btn btn-ppal">Deploy</a>
-                            <a href="https://github.com/IvanMCorrea/Portfolio bordesRedondeados" class="btn btn-sec" target="blank">Code</a>
+                            <a href="https://github.com/IvanMCorrea/Portfolio" class="btn btn-sec" target="blank">Code</a>
                         </div>
                     </div>
                 </div>    
                 <div class="col">
-                    <div class="card h-100 bordesRedondeados">
+                    <div class="card h-100 bordesRedondeados bg-cards">
                         <img src="img/soon.png" class="card-img-top bordesRedondeados" alt="Arcane Project foto">
                         <div class="card-body">
                             <h5 class="card-title">Arcane: coming soon</h5>
                             <p class="card-text">Work in progress</p>
-                            <a href="https://ivanmcorrea.github.io/CoderCorrea/" class="btn btn-ppal" target="blank">Deploy</a>
-                            <a href="https://github.com/IvanMCorrea/CoderCorrea" class="btn btn-sec" target="blank">Code</a>
+                            <a href="#" class="btn btn-ppal" target="blank">Deploy</a>
+                            <a href="#" class="btn btn-sec" target="blank">Code</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +143,7 @@
         <h2 class="text-white fs-1 fw-bold mb-5 mt-5" id="resume">Resume</h2>
         <section class="container mb-5 mt-5">
             <div class="d-flex justify-content-center pb-4">
-                <a href="img/CV English.pdf" download="Front End C.V. Ivan Correa" class="btn btn-sec" target="blank">Download C.V.</a>
+                <a href="img/CV English.pdf" download="Front End C.V. Ivan Correa" class="btn btn-third" target="blank">Download C.V.</a>
             </div>
             <div class="d-flex justify-content-center min-vh-100">
                 <iframe src="img/CV English.pdf" frameborder="0" class="bordesRedondeados w-75" title="CV"></iframe>

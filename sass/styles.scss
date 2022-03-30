@@ -8,26 +8,37 @@ a{
     color: whitesmoke;
 }
 .btn-ppal{
-    color: whitesmoke;
-    background-color: #2C97C8;
-    border-color: #2C97C8;
-    border-radius: 0.5rem;
-    font-weight: Bold;
+    color: map-get($map: $PaletaColores, $key: "text");
+    background-color: map-get($map: $PaletaColores, $key: "ppal");
+    border-color: map-get($map: $PaletaColores, $key: "ppal");
+    border-radius: 0.3rem;
     &:hover{
         color: whitesmoke;
-        background-color: #32d3ab;
-        border-color: #32d3ab;
+        background-color: map-get($map: $PaletaColores, $key: "ppal-act");
+        border-color: map-get($map: $PaletaColores, $key: "ppal-act");
     }
 }
 .btn-sec{
     color: whitesmoke;
-    background-color: #525659;
-    border-color: #525659;
-    border-radius: 0.5rem;
+    background-color: map-get($map: $PaletaColores, $key: "sec");
+    border-color: map-get($map: $PaletaColores, $key: "sec");
+    border-radius: 0.3rem;
     &:hover{
         color: whitesmoke;
-        background-color: #303030;
-        border-color: #303030;
+        background-color: map-get($map: $PaletaColores, $key: "sec-act");
+        border-color: map-get($map: $PaletaColores, $key: "sec-act");
+    }
+}
+.btn-third{
+    color: map-get($map: $PaletaColores, $key: "sec");
+    background-color: map-get($map: $PaletaColores, $key: "third");
+    border-color: map-get($map: $PaletaColores, $key: "third");
+    border-radius: 0.3rem;
+    font-weight: 550;
+    &:hover{
+        color: map-get($map: $PaletaColores, $key: "sec");
+        background-color: map-get($map: $PaletaColores, $key: "third-act");
+        border-color: map-get($map: $PaletaColores, $key: "third-act");
     }
 }
 .bordesRedondeados{
@@ -43,6 +54,9 @@ a{
     background: $BackgroundColor;
     min-height: 100vh;
     min-width: 100vw;
+}
+.bg-cards{
+    background-color: map-get($map: $PaletaColores, $key: "cont");
 }
 .navegador{
     padding-top: 5rem;
@@ -110,11 +124,29 @@ a{
         width: 350px;
     }
 }
-.bg-dark{
-    background-color: #212529;
-    @media (min-width: 992px){
-        background-color: transparent!important;
+.title-h1{
+    font-size: 1.5rem;
+    @media (min-width: 576px){
+        font-size: 2.5rem;
     }
+    @media (min-width: 1200px){
+        font-size: 3.5rem;
+    }
+    @media (min-width: 1400px){
+        font-size: 4.5rem;
+    }
+}
+.bg-dark-blur{
+    background-color: #212529;
+}
+.bg-blur{
+    background-color: #212529;
+    @media (min-width: 992px) {
+        backdrop-filter: blur(15px);
+        background-color: #1b1a2ea9;
+        box-shadow: 0 10px 10px 0 rgba(9,5,29,.171);
+    }
+    
 }
 .nav-link{
     color: whitesmoke!important;
