@@ -151,7 +151,7 @@ a{
 }
 .bg-blur{
     background-color: #212529;
-    @media (min-width: 992px) {
+    @media (min-width: 768px){
         backdrop-filter: blur(15px);
         background-color: #1b1a2ea9;
         box-shadow: 0 10px 10px 0 rgba(9,5,29,.171);
@@ -163,5 +163,14 @@ a{
     transition: opacity 0.2s;
     &:hover{
         opacity: 40%;
+    }
+}
+.offcanvas-end{
+    width: 150px;
+    @media (min-width: 425px){
+        width: 250px;
+    }
+    @media (min-width: 576px){
+        width: 400px;
     }
 }
