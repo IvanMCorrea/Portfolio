@@ -113,6 +113,13 @@ a {
     .img {
       width: 100px; } }
 
+.img-icon {
+  width: 24px;
+  height: auto; }
+  @media (min-width: 768px) {
+    .img-icon {
+      width: 32px; } }
+
 .sizeXl {
   width: 200px;
   height: auto; }
@@ -142,6 +149,9 @@ a {
 .bg-dark-blur {
   background-color: #212529; }
 
+.bg-ppal {
+  background-color: linear-gradient(90deg, #1E3C72 0%, #2A5298 100%); }
+
 .bg-blur {
   background-color: #212529; }
   @media (min-width: 992px) {
@@ -151,6 +161,7 @@ a {
       box-shadow: 0 10px 10px 0 rgba(9, 5, 29, 0.171); } }
 
 .nav-link {
-  color: whitesmoke !important; }
+  color: whitesmoke !important;
+  transition: opacity 0.2s; }
   .nav-link:hover {
-    color: #2b92c5 !important; }
+    opacity: 40%; }

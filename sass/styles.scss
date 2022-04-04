@@ -110,6 +110,13 @@ a{
         width: 100px;
     }
 }
+.img-icon{
+    width: 24px;
+    height: auto;
+    @media (min-width: 768px){
+        width: 32px;
+    }
+}
 .sizeXl{
     width: 200px;
     height: auto;
@@ -139,6 +146,9 @@ a{
 .bg-dark-blur{
     background-color: #212529;
 }
+.bg-ppal{
+    background-color: $BackgroundColor;
+}
 .bg-blur{
     background-color: #212529;
     @media (min-width: 992px) {
@@ -150,7 +160,8 @@ a{
 }
 .nav-link{
     color: whitesmoke!important;
+    transition: opacity 0.2s;
     &:hover{
-        color: #2b92c5!important;;
+        opacity: 40%;
     }
 }
