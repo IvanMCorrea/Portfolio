@@ -45,6 +45,15 @@ a {
     background-color: #71E5F5;
     border-color: #71E5F5; }
 
+.btn-backend {
+  background-color: #7ece0f;
+  border-color: #7ece0f;
+  border-radius: 0.3rem;
+  font-weight: 550; }
+  .btn-backend:hover {
+    background-color: #95ec1b;
+    border-color: #95ec1b; }
+
 .bordesRedondeados {
   border-radius: 1.25rem; }
 
@@ -56,7 +65,7 @@ a {
 .Background {
   background: linear-gradient(90deg, #1E3C72 0%, #2A5298 100%);
   min-height: 100vh;
-  min-width: 100vw; }
+  min-width: 100%; }
 
 .bg-cards {
   background-color: #ffffff; }

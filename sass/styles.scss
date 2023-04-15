@@ -42,15 +42,13 @@ a{
     }
 }
 .btn-backend{
-    color: whitesmoke;
-    background-color: "#65A30D";
-    border-color: "#65A30D";
+    background-color: #7ece0f;
+    border-color: #7ece0f;
     border-radius: 0.3rem;
     font-weight: 550;
     &:hover{
-        color: whitesmoke;
-        background-color: map-get($map: $PaletaColores, $key: "sec-act");
-        border-color: map-get($map: $PaletaColores, $key: "sec-act");
+        background-color: #95ec1b;
+        border-color: #95ec1b;
     }
 }
 .bordesRedondeados{
