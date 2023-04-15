@@ -41,6 +41,18 @@ a{
         border-color: map-get($map: $PaletaColores, $key: "third-act");
     }
 }
+.btn-backend{
+    color: whitesmoke;
+    background-color: "#65A30D";
+    border-color: "#65A30D";
+    border-radius: 0.3rem;
+    font-weight: 550;
+    &:hover{
+        color: whitesmoke;
+        background-color: map-get($map: $PaletaColores, $key: "sec-act");
+        border-color: map-get($map: $PaletaColores, $key: "sec-act");
+    }
+}
 .bordesRedondeados{
     @include BordesRedondeados;
 }
